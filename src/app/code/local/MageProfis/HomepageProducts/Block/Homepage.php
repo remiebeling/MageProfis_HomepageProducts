@@ -12,25 +12,22 @@ class MageProfis_HomepageProducts_Block_Homepage extends Mage_Catalog_Block_Prod
         
         parent::_construct();
         
-        /*
         $this->addData(array('cache_lifetime' => 43200)); // 12 hours
         $this->addCacheTag(array(
             Mage_Catalog_Model_Product::CACHE_TAG,
         ));
-        */
     }
 	
- /*
     public function getCacheKeyInfo()
-    {
+    {        
         return array(
             Mage::app()->getStore()->getId(),
             Mage::getDesign()->getPackageName(),
             Mage::getDesign()->getTheme('template'),
+            'MageProfis_HomepageProducts',
             $this->getCategoryId()
         );
     }
-   */
  
     protected function setCategoryId($id)
     {
