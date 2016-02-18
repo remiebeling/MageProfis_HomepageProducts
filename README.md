@@ -6,7 +6,7 @@ system -> configuration -> Mageprofis -> HomepageProducts
 
 ###To Do
 <ul>
-<li>Fix Caching errors</li>
+<li>Refresh cache after config change</li>
 </ul>
 
 
