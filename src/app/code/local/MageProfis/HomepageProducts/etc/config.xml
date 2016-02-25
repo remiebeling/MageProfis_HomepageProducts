@@ -1,1 +1,72 @@
-<?xml version="1.0"?><config>    <modules>        <MageProfis_HomepageProducts>            <version>0.0.1</version>        </MageProfis_HomepageProducts>    </modules>    <global>        <helpers>            <homepageproducts>                <class>MageProfis_HomepageProducts_Helper</class>            </homepageproducts>        </helpers>		<blocks>			<homepageproducts>				<class>MageProfis_HomepageProducts_Block</class>			</homepageproducts>		</blocks>		<models>            <homepageproducts>                <class>MageProfis_HomepageProducts_Model</class>            </homepageproducts>        </models>    </global>    <adminhtml>        <acl>            <resources>                <admin>                    <children>                        <system>                            <children>                                <config>                                    <children>                                        <homepageproducts>                                            <title>Homepageproducts</title>                                        </homepageproducts>                                    </children>                                </config>                            </children>                        </system>                    </children>                </admin>            </resources>        </acl>        <translate>            <modules>                <MageProfis_HomepageProducts>                    <files>                        <default>MageProfis_HomepageProducts.csv</default>                    </files>                </MageProfis_HomepageProducts>            </modules>        </translate>    </adminhtml>    <frontend>	    <layout>	        <updates>	            <homepageproducts>	                <file>MageProfis_HomepageProducts.xml</file>	            </homepageproducts>	        </updates>	    </layout>	</frontend></config>
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MageProfis_HomepageProducts>
+            <version>0.0.1</version>
+        </MageProfis_HomepageProducts>
+    </modules>
+    <global>
+        <helpers>
+            <homepageproducts>
+                <class>MageProfis_HomepageProducts_Helper</class>
+            </homepageproducts>
+        </helpers>
+		<blocks>
+			<homepageproducts>
+				<class>MageProfis_HomepageProducts_Block</class>
+			</homepageproducts>
+		</blocks>
+		<models>
+            <homepageproducts>
+                <class>MageProfis_HomepageProducts_Model</class>
+            </homepageproducts>
+        </models>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <homepageproducts>
+                                            <title>Homepageproducts</title>
+                                        </homepageproducts>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <translate>
+            <modules>
+                <MageProfis_HomepageProducts>
+                    <files>
+                        <default>MageProfis_HomepageProducts.csv</default>
+                    </files>
+                </MageProfis_HomepageProducts>
+            </modules>
+        </translate>
+    </adminhtml>
+    <frontend>
+	    <layout>
+	        <updates>
+	            <homepageproducts>
+	                <file>MageProfis_HomepageProducts.xml</file>
+	            </homepageproducts>
+	        </updates>
+	    </layout>
+	</frontend>
+    <default>
+        <homepageproducts>
+            <general>
+                <items>4</items>
+                <itemsperview>4</itemsperview>
+            </general>
+        </homepageproducts>       
+    </default>
+</config>
