@@ -83,9 +83,9 @@ class MageProfis_HomepageProducts_Block_Homepage extends Mage_Catalog_Block_Prod
                     ->addAttributeToFilter('status', 1)
                     ->addAttributeToFilter('visibility', 4)
                     ->addCategoryFilter($this->getCategory())
-                    ->addAttributeToSelect('*')
                     ->addAttributeToSelect(Mage::getSingleton('catalog/config')->getProductAttributes())
                     ->setPageSize($this->_item_limit)
+		    ->addAttributeToSort('position')
                     ->addStoreFilter()
                     ->addTaxPercents()
                     ->addUrlRewrite(0);
